@@ -13,6 +13,8 @@ import {
 } from 'gestalt';
 import 'gestalt/dist/gestalt.css';
 import { addSignee, selectAssignees } from './AssignSlice';
+import './Assign.css';
+
 
 const Assign = () => {
   const [email, setEmail] = useState('');
@@ -40,7 +42,7 @@ const Assign = () => {
   };
 
   return (
-    <div>
+    <div className="assign-container">
       <Box padding={3}>
         <Container>
           <Box padding={3}>
