@@ -45,11 +45,13 @@ service firebase.storage {
 ```
 [
   {
-    "origin": ["*"],
-    "method": ["GET"],
+    "origin": ["http://localhost:3000"],
+    "method": ["GET", "POST", "PUT", "DELETE", "HEAD"],
+    "responseHeader": ["Content-Type", "x-goog-meta-foo"],
     "maxAgeSeconds": 3600
   }
 ]
+
 ```
 
 And then used gsutil to update it:
@@ -60,4 +62,5 @@ https://cloud.google.com/storage/docs/configuring-cors
 ```
 npm start
 ```
+
 
