@@ -48,8 +48,10 @@ const SignDocument = () => {
 
       // load document
       const storageRef = storage.ref();
-      const URL = await storageRef.child(docRef).getDownloadURL();
-      documentViewer.loadDocument(URL);
+const URL = await storageRef.child(docRef).getDownloadURL();
+console.log("PDF URL:", URL); // 👈 check this in browser console
+documentViewer.loadDocument(URL);
+
 
       const normalStyles = (widget) => {
         if (widget instanceof Annotations.TextWidgetAnnotation) {

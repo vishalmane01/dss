@@ -6,7 +6,7 @@ const Header = () =>  {
     return (<Box display="flex" direction="row" paddingY={2} color={'lightGray'}>
     <Column span={10}>
       <Box padding={3}>
-        <Heading size="lg">PDFTron Sign App</Heading>
+        <Heading size="lg">Digital Signature Service</Heading>
       </Box>
     </Column>
     </Box>);
